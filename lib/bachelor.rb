@@ -44,13 +44,13 @@ end
 
 def get_average_age_for_season(data, season)
   # code here
-  countAge = 0
+  age = 0
   counter = 0
     data[season].each do |contestant|
       contestant.each do |age, i|
         if age == "age"
           count += 1
-          countAge += i.to_f
+          age += i.to_f
         end
       end
     end
